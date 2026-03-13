@@ -54,7 +54,7 @@ void List::delete_item()
 {
     cout << "\n\n\n\n\n\n\n\n\n";
     cout << "*** Delete Item ***\n";
-    cout << "Slecet an item number to delete\n";
+    cout << "Select an item number to delete\n";
 
     if (list.size())
     {
@@ -62,6 +62,12 @@ void List::delete_item()
         {
             cout << i << ": " << list[i] << endl;
         }
+
+        int choiceNum;
+        cin >> choiceNum;
+        list.erase(list.begin() + choiceNum);
+        cout << "Item deleted from the list!!!\n\n\n\n\n";
+        cin.clear();
     }
     else
     {
