@@ -9,6 +9,15 @@ using namespace std;
 class List
 {
 public:
+    // Constructor
+    List()
+    {
+    }
+    // Destructor
+    ~List()
+    {
+    }
+
     vector<string> list;
     string name;
 

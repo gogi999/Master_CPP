@@ -1,6 +1,6 @@
 #include "include/list.h"
 
-void print_menu()
+void List::print_menu()
 {
     int choice;
 
@@ -35,7 +35,7 @@ void print_menu()
     }
 }
 
-void add_item()
+void List::add_item()
 {
     cout << "\n\n\n\n\n\n\n\n\n";
     cout << "*** Add Item ***\n";
@@ -50,7 +50,7 @@ void add_item()
     print_menu();
 }
 
-void delete_item()
+void List::delete_item()
 {
     cout << "\n\n\n\n\n\n\n\n\n";
     cout << "*** Delete Item ***\n";
@@ -71,7 +71,7 @@ void delete_item()
     print_menu();
 }
 
-void print_list()
+void List::print_list()
 {
     cout << "\n\n\n\n\n\n\n\n\n";
     cout << "*** Printing List ***\n";

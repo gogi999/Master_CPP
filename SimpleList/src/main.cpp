@@ -1,11 +1,14 @@
+#include "include/list.h"
+
 // Main function
 int main(int arg_count, char *args[])
 {
 
     if (arg_count > 1)
     {
-        name = string(args[1]);
-        print_menu(name);
+        List simpleList;
+        simpleList.name = string(args[1]);
+        simpleList.print_menu();
     }
     else
     {
